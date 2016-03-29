@@ -18,7 +18,7 @@ subTitle: A Microframework for WordPress Applications
 logo_title: Alter
 logo_subtitle: A Microframework for WordPress Applications
 decription_full: Alter introduces a new way to develop WordPress Themes. With Models, Routes and Views you can easily develop large WordPress applications or websites.
-footer: Developed by <a href="http://vilar.cc">Sergio Vilar</a> and <a href="https://github.com/alterfw/hero/graphs/contributors" target="_blank">contributors</a>.
+footer: Developed by <a href="http://vilar.cc">Sergio Vilar</a> and <a href="https://github.com/alterfw/alter/graphs/contributors" target="_blank">contributors</a>.
 code: |
   Route::get('/cars', function() {
     $this->render('cars.index', ['car' => Car::all()]);
