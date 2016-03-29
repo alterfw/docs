@@ -2,7 +2,7 @@
 title: Views and Layouts
 ---
 
-Ampersand uses all the power of [Twig](http://twig.sensiolabs.org/) to render templates.
+Alter uses all the power of [Twig](http://twig.sensiolabs.org/) to render templates.
 
 You can render a view using the `render()` method of `Callback` object.
 
@@ -30,4 +30,4 @@ You can read about how to use Tiwg templates in his [documentation](http://twig.
 
 ### Layouts
 
-To use layouts with Ampersand you can use the [`extends` method](http://twig.sensiolabs.org/doc/tags/extends.html) of Twig.
+To use layouts with Alter you can use the [`extends` method](http://twig.sensiolabs.org/doc/tags/extends.html) of Twig.

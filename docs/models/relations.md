@@ -2,7 +2,7 @@
 title: Relationships
 ---
 
-In Hero you can specify relations between models such as `belongs_to` and `has_many`.
+In Alter you can specify relations between models such as `belongs_to` and `has_many`.
 
 
 Creates the `Car` model:

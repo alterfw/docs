@@ -14,7 +14,7 @@ Route::get('/hello/:name', function(){
 
 ## How to Deal with Content-Types
 
-By default Ampersand does not parse any other content-type other than the standard form data because PHP does not support it. That means if you attempt to post application/json you will not be able to access the data via `$this->request->post()`;
+By default Alter does not parse any other content-type other than the standard form data because PHP does not support it. That means if you attempt to post application/json you will not be able to access the data via `$this->request->post()`;
 
 To solve this you must parse the content type yourself. You can either do this on a per-route basis
 
@@ -27,7 +27,7 @@ $data = json_decode($this->request->getBody());
 
 ### Get Cookies
 
-Ampersand will automatically parse cookies sent with the current HTTP request. You can fetch cookie values
+Alter will automatically parse cookies sent with the current HTTP request. You can fetch cookie values
 with the request object like this:
 
 ```php
@@ -46,7 +46,7 @@ It's really that easy.
 
 # Headers
 
-Ampersand will automatically parse all HTTP request headers. You can access the request headers using the
+Alter will automatically parse all HTTP request headers. You can access the request headers using the
 request object's `headers` property.
 
 ```php
@@ -66,7 +66,7 @@ with either underscores or dashes. So use the naming convention with which you a
 When using a Javascript framework like MooTools or jQuery to execute an XMLHttpRequest, the XMLHttpRequest will
 usually be sent with a **X-Requested-With** HTTP header. The Slim application will detect the HTTP
 request’s **X-Requested-With** header and flag the request as such. If for some reason an XMLHttpRequest cannot
-be sent with the **X-Requested-With** HTTP header, you can force the Ampersand to assume an HTTP request
+be sent with the **X-Requested-With** HTTP header, you can force the Alter to assume an HTTP request
 is an XMLHttpRequest by setting a GET, POST, or PUT parameter in the HTTP request named “isajax” with a truthy value.
 
 Use the request object's `isAjax()` or `isXhr()` method to tell if the current request is an XHR/Ajax request:

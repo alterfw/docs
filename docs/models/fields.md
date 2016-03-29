@@ -2,7 +2,7 @@
 title: Setting model fields
 ---
 
-Hero has built in supprt to WordPress default fields such as title and thumbnail, you just need to set to true using the `$fields` attribute.
+Alter has built in support to WordPress default fields such as title and thumbnail, you just need to set to true using the `$fields` attribute.
 
 ```php
 use Hero\Core\Model;
@@ -20,7 +20,7 @@ class Car extends Model {
 
 ## Custom fields
 
-Hero allows you to use custom fields in your model:
+Alter allows you to use custom fields in your model:
 
 ```php
 public $fields = [
@@ -31,7 +31,7 @@ public $fields = [
 ];
 ```
 
-The built in field types on Hero are:
+The built in field types on Alter are:
 
 **text:**
 A simple text field
@@ -103,4 +103,4 @@ In the example above the field `color` will only appear if the `post_name` is `c
 
 ### Meta Box fields
 
-Hero uses Meta Box to create the custom fields, you can also use any of the [Meta Box fields](https://metabox.io/docs/define-fields/).
+Alter uses Meta Box to create the custom fields, you can also use any of the [Meta Box fields](https://metabox.io/docs/define-fields/).

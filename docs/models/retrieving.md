@@ -4,7 +4,7 @@ title: Retrieving and Saving data
 
 # Retrieving
 
-Hero offers a simple and powerful API to retrieve data. Let's supose that you have this `Car` model:
+Alter offers a simple and powerful API to retrieve data. Let's supose that you have this `Car` model:
 
 ```php
 use Hero\Core\Model;
@@ -115,7 +115,7 @@ The `$fields` parameter should be an array of fields, which some of them could b
 
 ## Automagic find() methods
 
-Hero allows you to use automagic *find()* methods according to you custom fields.
+Alter allows you to use automagic *find()* methods according to you custom fields.
 
 ```php
 $cars = Car::findByYear(2015);
@@ -125,7 +125,7 @@ This method will search all the cars that have the custom fields `year` with the
 
 # Saving
 
-With Hero you can also save data.
+With Alter you can also save data.
 
 Just intantiate your model:
 

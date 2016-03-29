@@ -39,7 +39,7 @@ The available options are: `message`, `error`, `info` and `warning`.
 
 ### Accessing Session in the views
 
-An instance of `Session` is available globally in all twig templates rendered by Ampersand.
+An instance of `Session` is available globally in all twig templates rendered by Alter.
 
 ```php
 {% if session->has('message') %}
@@ -51,7 +51,7 @@ An instance of `Session` is available globally in all twig templates rendered by
 ## URL
 
 The URL class helps you to get URLs for your routes.
-An instance of URL is available globally for all twig views rendered by Ampersand:
+An instance of URL is available globally for all twig views rendered by Alter:
 
 ```php
 <a href="{{ url->to('/') }}">Home</a>

@@ -2,7 +2,7 @@
 title: Taxonomies
 ---
 
-You can also register taxonomies using Hero:
+You can also register taxonomies using Alter:
 
 ```php
 use use Hero\Core\Taxonomy;

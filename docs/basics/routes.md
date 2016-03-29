@@ -2,7 +2,7 @@
 title: Routes
 ---
 
-The Ampersand Route component is built using the WordPress [Rewrite API](https://codex.wordpress.org/Rewrite_API).
+Alter's Route component is built using the WordPress [Rewrite API](https://codex.wordpress.org/Rewrite_API).
 
 ## Creating routes
 
@@ -24,7 +24,7 @@ Route::post('/hello', function(){
 
 ## Passing parameters to routes
 
-Ampersand will automatically parse any parameters passed to your routes:
+Alter will automatically parse any parameters passed to your routes:
 
 ```php
 Route::get('/car/:model', function($model){

@@ -2,7 +2,7 @@
 title: Dashboard customization
 ---
 
-Using Hero you can customize the menu labels on WordPress dashboard:
+Using Alter you can customize the menu labels on WordPress dashboard:
 
 ```php
 use Hero\Core\Model;
@@ -24,4 +24,4 @@ class Car extends Model {
 }
 ```
 
-Hero uses the [WordPress Dashicons](https://developer.wordpress.org/resource/dashicons/#images-alt).
+Alter uses the [WordPress Dashicons](https://developer.wordpress.org/resource/dashicons/#images-alt).

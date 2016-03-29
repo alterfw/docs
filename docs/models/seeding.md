@@ -2,7 +2,7 @@
 title: Seeding
 ---
 
-Hero includes a simple method for seeding your database using Seed classes. All seed classes must be stored at `/seed` directory.
+Alter includes a simple method for seeding your database using Seed classes. All seed classes must be stored at `/seed` directory.
 Seed classes may have any name you wish, but probably should follow some sensible convention, such as `CarSeeder`, etc.
 All seed classes must implement `Hero\Core\Seeder` interface, the `run()` method will be called during the seed process.
 
