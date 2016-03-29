@@ -73,13 +73,13 @@ particularly useful for applications that consume JSON or XML requests.</p>
   $body = $this-&gt;request-&gt;getBody();
 });</code></pre>
 <h2 id="how-to-deal-with-content-types">How to Deal with Content-Types</h2>
-<p>By default Ampersand does not parse any other content-type other than the standard form data because PHP does not support it. That means if you attempt to post application/json you will not be able to access the data via <code>$this-&gt;request-&gt;post()</code>;</p>
+<p>By default Alter does not parse any other content-type other than the standard form data because PHP does not support it. That means if you attempt to post application/json you will not be able to access the data via <code>$this-&gt;request-&gt;post()</code>;</p>
 <p>To solve this you must parse the content type yourself. You can either do this on a per-route basis</p>
 <pre><code class="language-php">//For application/json
 $data = json_decode($this-&gt;request-&gt;getBody());</code></pre>
 <h2 id="cookies">Cookies</h2>
 <h3 id="get-cookies">Get Cookies</h3>
-<p>Ampersand will automatically parse cookies sent with the current HTTP request. You can fetch cookie values
+<p>Alter will automatically parse cookies sent with the current HTTP request. You can fetch cookie values
 with the request object like this:</p>
 <pre><code class="language-php">$cookies = $this-&gt;request-&gt;cookies;</code></pre>
 <p>Only Cookies sent with the current HTTP request are accessible with this method. If you set a cookie during the
@@ -89,7 +89,7 @@ current request, it will not be accessible with this method until the subsequent
 setting. When this setting is <code>true</code>, all cookies will be encrypted using your designated secret key and cipher.</p>
 <p>It's really that easy.</p>
 <h1 id="headers">Headers</h1>
-<p>Ampersand will automatically parse all HTTP request headers. You can access the request headers using the
+<p>Alter will automatically parse all HTTP request headers. You can access the request headers using the
 request object's <code>headers</code> property.</p>
 <pre><code class="language-php">// Get request headers as associative array
 $headers = $this-&gt;request-&gt;headers;
@@ -103,7 +103,7 @@ with either underscores or dashes. So use the naming convention with which you a
 <p>When using a Javascript framework like MooTools or jQuery to execute an XMLHttpRequest, the XMLHttpRequest will
 usually be sent with a <strong>X-Requested-With</strong> HTTP header. The Slim application will detect the HTTP
 request’s <strong>X-Requested-With</strong> header and flag the request as such. If for some reason an XMLHttpRequest cannot
-be sent with the <strong>X-Requested-With</strong> HTTP header, you can force the Ampersand to assume an HTTP request
+be sent with the <strong>X-Requested-With</strong> HTTP header, you can force the Alter to assume an HTTP request
 is an XMLHttpRequest by setting a GET, POST, or PUT parameter in the HTTP request named “isajax” with a truthy value.</p>
 <p>Use the request object's <code>isAjax()</code> or <code>isXhr()</code> method to tell if the current request is an XHR/Ajax request:</p>
 <pre><code class="language-php">$isXHR = $app-&gt;request-&gt;isAjax();

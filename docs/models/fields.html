@@ -67,7 +67,7 @@
     
           <div class="col-md-9" style="padding-left: 2em">
         <h1>Setting model fields</h1>
-        <p>Hero has built in supprt to WordPress default fields such as title and thumbnail, you just need to set to true using the <code>$fields</code> attribute.</p>
+        <p>Alter has built in support to WordPress default fields such as title and thumbnail, you just need to set to true using the <code>$fields</code> attribute.</p>
 <pre><code class="language-php">use Hero\Core\Model;
 class Car extends Model {
 
@@ -80,14 +80,14 @@ class Car extends Model {
 
 }</code></pre>
 <h2 id="custom-fields">Custom fields</h2>
-<p>Hero allows you to use custom fields in your model:</p>
+<p>Alter allows you to use custom fields in your model:</p>
 <pre><code class="language-php">public $fields = [
   'name' =&gt; [
     'type' =&gt; 'text',
     'label' =&gt; 'Name' // Name showed on WordPress admin
   ]
 ];</code></pre>
-<p>The built in field types on Hero are:</p>
+<p>The built in field types on Alter are:</p>
 <p><strong>text:</strong>
 A simple text field</p>
 <p><strong>long_text:</strong>
@@ -132,7 +132,7 @@ A <code>file</code> field</p>
 ];</code></pre>
 <p>In the example above the field <code>color</code> will only appear if the <code>post_name</code> is <code>contact</code>.</p>
 <h3 id="meta-box-fields">Meta Box fields</h3>
-<p>Hero uses Meta Box to create the custom fields, you can also use any of the <a href="https://metabox.io/docs/define-fields/">Meta Box fields</a>.</p>
+<p>Alter uses Meta Box to create the custom fields, you can also use any of the <a href="https://metabox.io/docs/define-fields/">Meta Box fields</a>.</p>
       </div>
       </div>
 

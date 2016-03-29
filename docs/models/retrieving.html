@@ -68,7 +68,7 @@
           <div class="col-md-9" style="padding-left: 2em">
         <h1>Retrieving and Saving data</h1>
         <h1 id="retrieving">Retrieving</h1>
-<p>Hero offers a simple and powerful API to retrieve data. Let's supose that you have this <code>Car</code> model:</p>
+<p>Alter offers a simple and powerful API to retrieve data. Let's supose that you have this <code>Car</code> model:</p>
 <pre><code class="language-php">use Hero\Core\Model;
 class Car extends Model {
 
@@ -153,11 +153,11 @@ class Car extends Model {
 <li><code>children</code>: Returns all the children pages (in case of the Page post type)</li>
 </ul>
 <h2 id="automagic-find-methods">Automagic find() methods</h2>
-<p>Hero allows you to use automagic <em>find()</em> methods according to you custom fields.</p>
+<p>Alter allows you to use automagic <em>find()</em> methods according to you custom fields.</p>
 <pre><code class="language-php">$cars = Car::findByYear(2015);</code></pre>
 <p>This method will search all the cars that have the custom fields <code>year</code> with the <em>2015</em> value.</p>
 <h1 id="saving">Saving</h1>
-<p>With Hero you can also save data.</p>
+<p>With Alter you can also save data.</p>
 <p>Just intantiate your model:</p>
 <pre><code class="language-php">$car = new Car();</code></pre>
 <p>Add some data:</p>
