@@ -11,7 +11,7 @@ github:
     repo: alter
 
 title: Alter
-baseUrl: http://alterfw.github.io/hero
+baseUrl: http://alterframework.com
 name: Alter
 composer_command: composer create-project alterfw/alter mytheme
 subTitle: A Microframework for WordPress Applications
