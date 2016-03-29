@@ -1,0 +1,74 @@
+{% extends "default.twig" %}
+
+{% block header %}
+      <div class="wrapper">
+    <div class="container-fluid">
+{% endblock %}
+
+{% block nav %}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <p class="lead">
+            {{ decription_full |raw }}
+        </p>
+        <pre class="language-php"><code>{{ code }}</code></pre>
+    </div>
+</div>
+
+<div class="row section">
+    
+    <div class="col-md-4">
+        <a class="slim-button" href="{{baseUrl}}/docs"><i class="fa fa-book"></i><span>Documentation</span></a>
+    </div>
+    <div class="col-md-4">
+        <a class="slim-button" href="http://github.com/{{github.user}}/{{github.repo}}/issues"><i class="fa fa-question-circle"></i><span>Support</span></a>
+    </div>
+    <div class="col-md-4">
+        <a class="slim-button" href="http://github.com/{{github.user}}/{{github.repo}}/blob/master/CONTRIBUITING.md"><i class="fa fa-wrench"></i><span>Contribute</span></a>
+    </div>
+
+</div>
+
+{% if features is defined %}
+<div class="row section">
+    <div class="col-md-12">
+        <h1 class="divider"><span>Features</span></h1>
+
+        {% for itemId, item in features %}
+
+        {% if itemId % 2 != 0%}
+        <div class="row">
+        {% endif %}
+
+        <div class="col-md-6">
+            <h2><i class="fa fa-{{ item.icon }}"></i> {{ item.title }}</h2>
+            <p>{{ item.description|raw }}</p>
+        </div>
+
+        {% if itemId % 2 == 0 %}
+        </div>
+        {% endif %}
+
+        {% endfor %}
+
+    </div>
+</div>
+{% endif %}
+
+<div class="row section">
+    <div class="col-md-12">
+        <h1 class="divider"><span>Getting Started</span></h1>
+        <p>
+            To get started with Alter you will need to create a new theme by running this command in your <code>wp-content/themes</code> directory:
+        </p>
+        <pre><code class="language-bash">{{ composer_command }}</code></pre>
+        <p>
+            This command will create a bootstrap project to getting started with Alter. See more about Alter in the <a href="{{baseUrl}}/docs">Docs</a>.
+        </p>
+
+    </div>
+</div>
+
+{% endblock %}

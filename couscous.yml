@@ -1,0 +1,83 @@
+template:
+    directory: ./template
+
+exclude:
+    - vendor
+    - src
+    - test
+
+github:
+    user: alterfw
+    repo: alter
+
+title: Alter
+baseUrl: http://alterfw.github.io/hero
+name: Alter
+composer_command: composer create-project alterfw/alter mytheme
+subTitle: A Microframework for WordPress Applications
+logo_title: Alter
+logo_subtitle: A Microframework for WordPress Applications
+decription_full: Alter introduces a new way to develop WordPress Themes. With Models, Routes and Views you can easily develop large WordPress applications or websites.
+footer: Developed by <a href="http://vilar.cc">Sergio Vilar</a> and <a href="https://github.com/alterfw/hero/graphs/contributors" target="_blank">contributors</a>.
+code: |
+  Route::get('/cars', function() {
+    $this->render('cars.index', ['car' => Car::all()]);
+  });
+example: <i class="fa fa-question-circle"></i><span>See the example theme</span>
+example_repo: https://github.com/alterfw/ampersand-example
+
+features:
+    1:
+        title: Router
+        icon: plane
+        description: |
+            Alter provides a simple router built in the WordPress rewrite API using Fastroute that maps
+            route callbacks to specific HTTP request
+            methods and URIs.
+    2:
+        title: HTTP
+        icon: exchange
+        description: |
+            Alter has easy-to-use request and response abstractions
+            that let you inspect and manipulate
+            HTTP messages' method, status, URI, headers, cookies, and body.
+    3:
+        title: Templates
+        icon: file-text
+        description: |
+            Alter uses Twig as built-in as template engine, so you can create
+            powerful templates using layouts, template blocks, etc.
+    4:
+        title: Models
+        icon: database
+        description: |
+            Alter creates a binding from Models to Post Types to you can easily create custom fields and retrieve items from the models through a very simple API.
+
+# The left menu bar
+show_menu_sub: true
+menu_sub:
+    - title: Getting Started
+      items:
+        - [/docs/index.html, Installation]
+        - [/docs/config.html, Configuration]
+    - title: The Basics
+      items:
+        - [/docs/basics/routes.html, Routes]
+        - [/docs/basics/views.html, Views and Layouts]
+        - [/docs/basics/wordpress.html, WordPress Templates]
+        - [/docs/basics/helpers.html, View Helpers]
+    - title: HTTP 
+      items:
+        - [/docs/http/request.html, Requests]
+        - [/docs/http/response.html, Responses]        
+    - title: Models
+      items:
+        - [/docs/models/creating.html, Creating Models]
+        - [/docs/models/fields.html, Setting model fields]
+        - [/docs/models/relations.html, Relationships]
+        - [/docs/models/retrieving.html, Retrieving and Saving]
+        - [/docs/models/taxonomies.html, Taxonomies]
+        - [/docs/models/seeding.html, Seeds]
+        - [/docs/models/dashboard.html, Dashboard customization]        
+
+        
