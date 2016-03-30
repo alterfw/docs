@@ -67,7 +67,7 @@
     
           <div class="col-md-9" style="padding-left: 2em">
         <h1>Routes</h1>
-        <p>Alter's Route component is built using the WordPress <a href="https://codex.wordpress.org/Rewrite_API">Rewrite API</a>.</p>
+        <p>Alter's Route component is built using the WordPress <a href="https://codex.wordpress.org/Rewrite_API">Rewrite API</a> and <a href="https://github.com/nikic/FastRoute">FastRoute</a>.</p>
 <h2 id="creating-routes">Creating routes</h2>
 <p>You can create routes simply calling the static methods of the <code>Route</code> class:</p>
 <pre><code class="language-php">Route::get('/hello', function(){
@@ -109,7 +109,7 @@ Route::get('/car/:model', 'check_auth', function($model){
   // do something with $model
 });</code></pre>
 <h2 id="closures-x-function-names">Closures x function names</h2>
-<p>In Ampersand routes, Closures (callbacks and middlewares) has bindings to a <code>Callback</code> object that inherits from <code>Response</code>, so you can simply access response methods via <code>$this</code>.</p>
+<p>In Alter routes, Closures (callbacks and middlewares) has bindings to a <code>Callback</code> object that inherits from <code>Response</code>, so you can simply access response methods via <code>$this</code>.</p>
 <pre><code class="language-php">Route::get('/hello', function(){
   $this-&gt;render('hello');
 });</code></pre>

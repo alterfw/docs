@@ -75,7 +75,7 @@
 if(Session::has('hello'))
   echo Session::get('hello');</code></pre>
 <p>The above script will output this:</p>
-<pre><code>hello</code></pre>
+<pre><code>world</code></pre>
 <h3 id="flash-messages">Flash messages</h3>
 <p>You can use the <code>flash()</code> method to deal with flash messages. Flash messages will be available via the <code>get()</code> method only in the next request.</p>
 <pre><code class="language-php">Session::flash('You have one message!');</code></pre>
