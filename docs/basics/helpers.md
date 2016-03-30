@@ -18,7 +18,7 @@ if(Session::has('hello'))
 
 The above script will output this:
 
-    hello
+    world
     
     
 ### Flash messages

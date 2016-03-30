@@ -41,12 +41,12 @@ features:
         description: |
             Alter has easy-to-use request and response abstractions
             that let you inspect and manipulate
-            HTTP messages' method, status, URI, headers, cookies, and body.
+            HTTP requests, method, status, URI, headers, cookies, and body.
     3:
         title: Templates
         icon: file-text
         description: |
-            Alter uses Twig as built-in as template engine, so you can create
+            Alter uses Twig as built-in template engine, so you can create
             powerful templates using layouts, template blocks, etc.
     4:
         title: Models

@@ -2,7 +2,7 @@
 title: Routes
 ---
 
-Alter's Route component is built using the WordPress [Rewrite API](https://codex.wordpress.org/Rewrite_API).
+Alter's Route component is built using the WordPress [Rewrite API](https://codex.wordpress.org/Rewrite_API) and [FastRoute](https://github.com/nikic/FastRoute).
 
 ## Creating routes
 
@@ -79,7 +79,7 @@ Route::get('/car/:model', 'function1', 'function2', 'function3', function($model
 
 ## Closures x function names
 
-In Ampersand routes, Closures (callbacks and middlewares) has bindings to a `Callback` object that inherits from `Response`, so you can simply access response methods via `$this`.
+In Alter routes, Closures (callbacks and middlewares) has bindings to a `Callback` object that inherits from `Response`, so you can simply access response methods via `$this`.
 
 ```php
 Route::get('/hello', function(){
