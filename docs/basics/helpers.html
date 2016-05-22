@@ -79,7 +79,7 @@ if(Session::has('hello'))
 <h3 id="flash-messages">Flash messages</h3>
 <p>You can use the <code>flash()</code> method to deal with flash messages. Flash messages will be available via the <code>get()</code> method only in the next request.</p>
 <pre><code class="language-php">Session::flash('You have one message!');</code></pre>
-<p>You can also specify the type of the message: </p>
+<p>You can also specify the type of the message:</p>
 <pre><code class="language-php">Session::flash('Unexpected error!', 'error');</code></pre>
 <p>The available options are: <code>message</code>, <code>error</code>, <code>info</code> and <code>warning</code>.</p>
 <h3 id="accessing-session-in-the-views">Accessing Session in the views</h3>
@@ -90,9 +90,9 @@ if(Session::has('hello'))
 <h2 id="url">URL</h2>
 <p>The URL class helps you to get URLs for your routes.
 An instance of URL is available globally for all twig views rendered by Alter:</p>
-<pre><code class="language-php">&lt;a href="{{ url-&gt;to('/') }}"&gt;Home&lt;/a&gt;</code></pre>
+<pre><code class="language-php">&lt;a href="{{ url.to('/') }}"&gt;Home&lt;/a&gt;</code></pre>
 <p>You can also create more complex URLs passing attributes:</p>
-<pre><code class="language-php">&lt;a href="{{ url-&gt;to('/hello/:name/:age', 'Sergio, '23') }}"&gt;Hello!&lt;/a&gt;</code></pre>
+<pre><code class="language-php">&lt;a href="{{ url.to('/hello/:name/:age', 'Sergio, '23') }}"&gt;Hello!&lt;/a&gt;</code></pre>
 <p>This code above will generate the following output:</p>
 <pre><code>http://yousite.com/hello/Sergio/23</code></pre>
       </div>
